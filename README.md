@@ -55,4 +55,4 @@ This will:
 - Use the Figma design as a reference to style the frontend.
 - Your implementation should look, and function as closely as possible to the design.
 
-[Figma Design](https://www.figma.com/design/1234567890/LeadPilot-Assignment?node-id=0-1&t=0-0)
+[Figma Design](https://www.figma.com/design/if5qWifjxeccbqNMc4hxUU/Table.-Interview?t=IJKZaS3zZWJdJQRJ-0)

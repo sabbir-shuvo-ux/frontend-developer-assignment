@@ -10,10 +10,6 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.json({ message: "Hello" });
-});
-
 // Get users with pagination
 app.get("/api/users", async (req, res) => {
   try {
@@ -25,7 +21,7 @@ app.get("/api/users", async (req, res) => {
     const total = parseInt(countResult.rows[0].count);
 
     const result = await db.query(
-      "SELECT id, first_name, last_name, email FROM users ORDER BY id LIMIT $1 OFFSET $2",
+      "SELECT id, first_name, last_name, email, phone FROM users ORDER BY id LIMIT $1 OFFSET $2",
       [limit, offset]
     );
 
